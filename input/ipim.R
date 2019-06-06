@@ -1,5 +1,5 @@
 GET('https://www.indec.gov.ar/ftp/cuadros/economia/sh_ipi_manufacturero_2019.xls', write_disk("input/ipim.xls"))
-ipim <- read.xlsx("input/ipim.xls", sheetName = "Cuadro 2", startRow = 4, header = TRUE) %>% DropNA(Var = "NA..1", message = TRUE)
+ipim <- read.xls("input/ipim.xls", sheetName = "Cuadro 2", startRow = 4, header = TRUE) %>% DropNA(Var = "NA..1", message = TRUE)
 r <- nrow(ipim)
 date <- seq(as.Date("2016/01/01"), by = "month", length.out = r)
 ipim <- cbind(date,ipim) %>% select(-2,-3,-4)
