@@ -9,6 +9,6 @@ source("input/ipim.R")
 source("input/adefa.R")
 source("input/caa.R")
 source("input/cemento.R")
-source("input/faena.R") #revisar: parece que tiene datos anuales
-source("input/construya")
-source("input/resto.R")
+source("input/faena.R")
+source("input/construya.R") #Revisar: serie junio 2002 = 100
+source("input/resto.R") #trade es anual, revisar lo de energía, ISAC
